@@ -8,6 +8,6 @@ RUN apt update \
     && tar xvzf rigel-1.15.1-linux.tar.gz \
     && rm rigel-1.15.1-linux.tar.gz
 
-WORKDIR /rigel-1.15.1
+WORKDIR /rigel-1.15.1-linux
 
 ENTRYPOINT ["./rigel"]
