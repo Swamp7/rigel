@@ -4,10 +4,10 @@ RUN rm /etc/apt/sources.list.d/cuda.list
 
 RUN apt update \ 
     && apt -y install wget \
-    && wget https://github.com/rigelminer/rigel/releases/download/1.15.1/rigel-1.15.1-linux.tar.gz \
-    && tar xvzf rigel-1.15.1-linux.tar.gz \
-    && rm rigel-1.15.1-linux.tar.gz
+    && wget https://github.com/rigelminer/rigel/releases/download/1.17.0/rigel-1.17.0-linux.tar.gz \
+    && tar xvzf rigel-1.17.0-linux.tar.gz \
+    && rm rigel-1.17.0-linux.tar.gz
 
-WORKDIR /rigel-1.15.1-linux
+WORKDIR /rigel-1.17.0-linux
 
 ENTRYPOINT ["./rigel"]
