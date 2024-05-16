@@ -9,6 +9,6 @@ RUN apt update \
     && rm rigel-1.17.1-linux.tar.gz \
     && ln -s libnvidia-ml.so.1 /lib/x86_64-linux-gnu/libnvidia-ml.so
 
-WORKDIR /rigel-1.17.0-linux
+WORKDIR /rigel-1.17.1-linux
 
 ENTRYPOINT ["./rigel"]
