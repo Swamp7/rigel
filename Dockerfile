@@ -4,7 +4,7 @@ RUN rm /etc/apt/sources.list.d/cuda.list
 
 RUN apt update \ 
     && apt -y install wget \
-    && wget https://github.com/rigelminer/rigel/releases/download/1.21.0/rigel-1.21.2-linux.tar.gz \
+    && wget https://github.com/rigelminer/rigel/releases/download/1.21.2/rigel-1.21.2-linux.tar.gz \
     && tar xvzf rigel-1.21.2-linux.tar.gz \
     && rm rigel-1.21.2-linux.tar.gz \
     && ln -s libnvidia-ml.so.1 /lib/x86_64-linux-gnu/libnvidia-ml.so
